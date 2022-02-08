@@ -41,6 +41,7 @@ export default function BlogArticleExtended({ api }) {
         <Typography variant="h6">{article.subtitle}</Typography>
         {article.img !== null ? (
           <Box
+            className="p-8"
             sx={{
               display: "flex",
               justifyContent: "center",
