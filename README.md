@@ -6,5 +6,5 @@
 
 - branch: development
 - last build: none
-- apiurl: http://stefifoxfly.it:5200/api/v1
+- apiurl: http://stefifoxprojects.it:5210/stefifoxfly/api/v1
 - wensiteurl: http:stefifoxfly.it
