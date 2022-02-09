@@ -16,6 +16,7 @@ export default function BlogPage({ api, articleList, setAricleList }) {
 
   React.useEffect(() => {
     setisLoading(true);
+    setError(false);
     fetch(api + "/getArticle")
       .then((response) => response.json())
       .then((data) => {

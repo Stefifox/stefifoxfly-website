@@ -6,12 +6,17 @@ import BlogPage from "./pages/blog/BlogPage";
 import PagesConfig from "./pages/PagesConfig";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import BlogArticleExtended from "./pages/blog/BlogArticleExtended";
+import UserPage from "./pages/user/UserPage";
+import ReactSession from "react-client-session/dist/ReactSession";
 
-const api_url = "http://stefifoxfly.it:5200/api/v1";
+const api_url = "http://stefifoxprojects.it:5210/stefifoxfly/api/v1";
 
 function App() {
   let navigate = useNavigate();
   const [articleList, setAricleList] = React.useState([]);
+
+  ReactSession.setStoreType("sessionStorage");
+
   return (
     <>
       <Box sx={{ height: "100%" }}>
@@ -46,6 +51,7 @@ function App() {
             path="/blog/article/:id"
             element={<BlogArticleExtended api={api_url} />}
           />
+          <Route path="/user" element={<UserPage api={api_url} />} />
         </Routes>
       </Box>
     </>

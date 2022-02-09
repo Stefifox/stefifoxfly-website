@@ -7,4 +7,8 @@ export default [
     label: "Blog",
     path: "/blog",
   },
+  {
+    label: "Your page",
+    path: "/user",
+  },
 ];

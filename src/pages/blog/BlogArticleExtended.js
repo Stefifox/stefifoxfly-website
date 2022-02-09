@@ -1,6 +1,4 @@
-import { maxWidth } from ".pnpm/172.16.0.100+5002+@mui+system@5.4.0_922a85da57e3646a57465b7970b0de85/node_modules/@mui/system";
 import { Typography, Box, Alert } from "@mui/material";
-import { render } from "@testing-library/react";
 import React from "react";
 import { useParams } from "react-router-dom";
 
