@@ -9,7 +9,7 @@ import BlogArticleExtended from "./pages/blog/BlogArticleExtended";
 import UserPage from "./pages/user/UserPage";
 import ReactSession from "react-client-session/dist/ReactSession";
 
-const api_url = "http://stefifoxprojects.it:5210/stefifoxfly/api/v1";
+const api_url = "https://stefifoxprojects.it:5210/stefifoxfly/api/v1";
 
 function App() {
   let navigate = useNavigate();
